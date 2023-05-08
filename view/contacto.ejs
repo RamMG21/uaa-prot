@@ -1,0 +1,243 @@
+<%- include("templates/cabecera") %> 
+<link rel="stylesheet" href="./css/dist.css">
+<link rel="stylesheet" href="./css/estilo_contacto.css">
+<!-- Sortable JS CDN -->
+<script src="https://cdn.jsdelivr.net/npm/sortablejs@latest/Sortable.min.js"></script>
+
+<section class="container mx-auto">
+    <section class="p-10 h-screen">
+        <div class="text-3xl font-extrabold top_songs">
+                <h4 class="capitalize text-yellow-500 tracking-widest" style="color:#094b65">
+                    Integrantes
+                </h4>
+          </div>
+          <!-- table container -->
+        <section class="my-10">
+            <div class="flex flex-col">
+                <div class="-my-2 overflow-x-auto sm:-mx-6 lg:px-8">
+                  <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
+                    <div class="overflow-hidden shadow-md bg-white rounded-lg">
+                      <table class="min-w-full divide-y divide-gray-200">
+                        <thead>
+                          <tr>
+                            <th scope="col" class="px-6 py-3 text-left text-md text-gray-500 capitalize tracking-wider">
+                                 #
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-md text-gray-500 capitalize tracking-wider">
+                              Participantes
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-md text-gray-500 capitalize tracking-wider">
+                              Universidad
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-md text-gray-500 capitalize tracking-wider">
+                              Contacto
+                            </th>
+                            <th scope="col" class="px-6 py-3 text-left text-md text-gray-500 capitalize tracking-wider">
+                              ...
+                            </th>
+                          </tr>
+                        </thead>
+                        <!-- Table Body -->
+                        <tbody class="bg-white" id="list_item">
+                          <!-- Table Card#1 -->
+                          <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                01
+                              </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                              <div class="flex items-center">
+                                <div class="flex-shrink-0 h-10 w-10">
+                                  <img class="h-10 w-10 rounded-full object-cover" src="./img/Ramses.jpg" alt="the-weekend">
+                                </div>
+                                <div class="ml-4">
+                                  <div class="text-sm font-medium text-gray-700 capitalize">
+                                    Jose Ramses Moreno Gonzalez
+                                  </div>
+                                  <div class="text-xs text-gray-400 capitalize">
+                                    Ing. Computacion Inteligente
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                              </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-purple-700 capitalize">...</span>
+                            </td>
+                          </tr>
+                          <!-- Table Card#2 -->
+                          <tr>
+                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                02
+                              </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                              <div class="flex items-center">
+                                <div class="flex-shrink-0 h-10 w-10">
+                                  <img class="h-10 w-10 rounded-full object-cover" src="./img/sergio.jpeg" alt="ed-shreen">
+                                </div>
+                                <div class="ml-4">
+                                  <div class="text-sm font-medium text-gray-700 capitalize">
+                                    Sergio Ivan Galvis Motoa
+                                  </div>
+                                  <div class="text-xs text-gray-400 capitalize">
+                                    Co-Tutor
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                              </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                            </td>
+                            <td class="px-6 py-4 whitespace-nowrap">
+                                <span class="text-sm text-purple-700 capitalize">...</span>
+                            </td>
+                          </tr>
+                           
+                                <!-- Table Card#3 -->
+                                     <tr>
+                                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                          03
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                          <div class="flex-shrink-0 h-10 w-10">
+                                            <img class="h-10 w-10 rounded-full object-cover" src="./img/Eunice-Ponce-De-Leon-Senti.jpg" alt="luis-fonsi">
+                                          </div>
+                                          <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-700 capitalize">
+                                              Dra. Eunice Esther Ponce de Leon Santi
+                                            </div>
+                                            <div class="text-xs text-gray-400 capitalize">
+                                             Co-Tutora
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-purple-700 capitalize">...</span>
+                                      </td>
+                                    </tr>
+
+                                     <!-- Table Card#4 -->
+                                     <tr>
+                                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                          04
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                          <div class="flex-shrink-0 h-10 w-10">
+                                            <img class="h-10 w-10 rounded-full object-cover" src="./img/Fj.jpeg" alt="marshmello">
+                                          </div>
+                                          <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-700 capitalize">
+                                              Dr. Francisco Javier Alvarez Rodriguez 
+                                            </div>
+                                            <div class="text-xs text-gray-400 capitalize">
+                                             Sinodal
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-purple-700 capitalize">...</span>
+                                      </td>
+                                    </tr>
+                               
+                                  <!-- Table Card#5 -->
+                                          <tr>
+                                            <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                                05
+                                              </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                              <div class="flex items-center">
+                                                <div class="flex-shrink-0 h-10 w-10">
+                                                  <img class="h-10 w-10 rounded-full object-cover" src="./img/Padilla.jpg" alt="justin-bieber">
+                                                </div>
+                                                <div class="ml-4">
+                                                  <div class="text-sm font-medium text-gray-700 capitalize">
+                                                    Dr. Alejandro Padilla Diaz 
+                                                  </div>
+                                                  <div class="text-xs text-gray-400 capitalize">
+                                                   Sinodal
+                                                  </div>
+                                                </div>
+                                              </div>
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                                              </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                                            </td>
+                                            <td class="px-6 py-4 whitespace-nowrap">
+                                                <span class="text-sm text-purple-700 capitalize">...</span>
+                                            </td>
+                                          </tr>
+
+                                          <!-- Table Card#6 -->
+                                     <tr>
+                                      <td class="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
+                                          06
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                        <div class="flex items-center">
+                                          <div class="flex-shrink-0 h-10 w-10">
+                                            <img class="h-10 w-10 rounded-full object-cover" src="./img/julio.jpeg" alt="marshmello">
+                                          </div>
+                                          <div class="ml-4">
+                                            <div class="text-sm font-medium text-gray-700 capitalize">
+                                              Dr. Julio Cesar Ponce Gallegos
+                                            </div>
+                                            <div class="text-xs text-gray-400 capitalize">
+                                             Sinodal
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <div class="text-sm text-gray-700 capitalize">Universidad Autonoma de Aguascalientes</div>
+                                        </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-gray-600 leading-5 px-2 inline-flex">Contacto</span>
+                                      </td>
+                                      <td class="px-6 py-4 whitespace-nowrap">
+                                          <span class="text-sm text-purple-700 capitalize">...</span>
+                                      </td>
+                                    </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+    </section>
+</section>
+</section>
+
+
+
+
+
+<script src="./js/script_contacto.js" defer></script>
+
+
+<%- include("templates/footer") %> 

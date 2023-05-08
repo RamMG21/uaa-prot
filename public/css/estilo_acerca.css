@@ -1,0 +1,32 @@
+*
+{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: courier;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #094b65;
+}
+
+#contenedor_acercade1{
+
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    padding: 40px;
+    background: #094b65;
+}
+
+#fondo {
+    
+    width: 800px;
+    position: absolute;
+    top: 60px;
+    left: 800px;
+   
+    
+}

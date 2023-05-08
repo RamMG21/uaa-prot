@@ -1,0 +1,37 @@
+*
+{
+    
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: courier;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    color: #094b65;
+}
+
+#fondo {
+    
+    width: 700px;
+    position: absolute;
+    top: 60px;
+    left: 720px;
+   
+    
+}
+
+#listado{
+    font-size: 30px;
+
+}
+
+
+
+.centrado{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

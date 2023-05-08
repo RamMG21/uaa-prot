@@ -1,0 +1,38 @@
+<%- include("templates/cabecera") %> 
+
+    <div class="conteiner">
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nombre</th>
+                <th scope="col">Area</th>
+                <th scope="col">Trabajo</th>
+              </tr>
+            </thead>
+            <tbody>
+
+                <% if (arrayInvestigadores.length > 0) { %>
+                    <% arrayInvestigadores.forEach(investigadores => { %>
+                        
+                        <tr>
+                            <th scope="row"><%= investigadores.id %> </th>
+                            <td><%= investigadores.nombre %> </td>
+                            <td><%= investigadores.descripcion %> </td>
+                            <td>@mdo</td>
+                          </tr>
+                     
+                    <% }) %>
+                 
+                <% } %>
+
+              
+              
+            </tbody>
+          </table>
+
+        
+    </div>
+
+<%- include("templates/footer") %> 

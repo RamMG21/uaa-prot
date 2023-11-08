@@ -85,14 +85,26 @@ body {
 
 .entrar {
     position: absolute;
-    top: 450px;
-    left: 500px;
+   
     text-decoration: none;
     padding: 10px;
     font-size: 25px;
     border-radius: 20px;
     background: #fff;
     color: #094b65;
+}
+
+.forget {
+    margin-top: 60px;
+    position: absolute;
+    padding: 2px;
+}
+
+.registration {
+    margin-top: 80px;
+    padding: 2px;
+    position: absolute;
+   
 }
 
 

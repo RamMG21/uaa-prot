@@ -9,7 +9,7 @@ app.set('views', __dirname + '/view');
 
 app.use(express.static(__dirname + "/public"));
 
-app.use('/', require('./router/RutaWeb'));
+app.use('./', require('./router/RutaWeb'));
 app.use('/investigadores', require('./router/Investigadores'));
 
 
